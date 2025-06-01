@@ -1,0 +1,12 @@
+{
+	"schemaVersion": "0.1.0",
+	"name": "Kindle highlights",
+	"behavior": "append-specific",
+	"noteContentFormat": "{{selector:.kp-notebook-highlight|map:item => \"${item}\"|template:\"> ${str}\"}}",
+	"properties": [],
+	"triggers": [
+		"https://read.amazon.com/notebook"
+	],
+	"noteNameFormat": "{{selector:h3}}",
+	"path": "Resources/Books"
+}
