@@ -1,0 +1,18 @@
+{
+	"schemaVersion": "0.1.0",
+	"name": "Book cover",
+	"behavior": "append-specific",
+	"noteContentFormat": "",
+	"properties": [
+		{
+			"name": "image",
+			"value": "{{schema:@Book:image}}",
+			"type": "text"
+		}
+	],
+	"triggers": [
+		"https://www.goodreads.com/book/show/"
+	],
+	"noteNameFormat": "{{selector:h1}}",
+	"path": "Resources/Books"
+}
