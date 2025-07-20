@@ -20,6 +20,11 @@
 			"type": "text"
 		},
 		{
+			"name": "image",
+			"value": "{{selector:[jsaction$=heroHeaderImage] img?src}}",
+			"type": "text"
+		},
+		{
 			"name": "rating",
 			"value": "",
 			"type": "number"

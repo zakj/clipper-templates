@@ -1,0 +1,23 @@
+{
+	"schemaVersion": "0.1.0",
+	"name": "Steam",
+	"behavior": "create",
+	"noteContentFormat": "",
+	"properties": [
+		{
+			"name": "image",
+			"value": "{{image}}",
+			"type": "text"
+		},
+		{
+			"name": "year",
+			"value": "{{selector:.release_date .date|split:\\\", \\\"|slice:1}}",
+			"type": "number"
+		}
+	],
+	"triggers": [
+		"https://store.steampowered.com/app/"
+	],
+	"noteNameFormat": "{{selector:#appHubAppName}}",
+	"path": "Resources/Games"
+}
