@@ -39,5 +39,5 @@
 		"https://www.google.com/maps/place/"
 	],
 	"noteNameFormat": "{{selector:div[role=\"main\"]?aria-label}}",
-	"path": "References/Places"
+	"path": "Resources/Places"
 }
