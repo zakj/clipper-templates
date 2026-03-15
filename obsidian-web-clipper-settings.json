@@ -1,0 +1,357 @@
+{
+  "general_settings": {
+    "betaFeatures": false,
+    "legacyMode": false,
+    "openBehavior": "embedded",
+    "saveBehavior": "addToObsidian",
+    "showMoreActionsButton": false,
+    "silentOpen": false
+  },
+  "highlighter_settings": {
+    "alwaysShowHighlights": true,
+    "highlightBehavior": "highlight-inline",
+    "highlighterEnabled": true
+  },
+  "interpreter_settings": {
+    "defaultPromptContext": "",
+    "interpreterAutoRun": false,
+    "interpreterEnabled": false,
+    "interpreterModel": "",
+    "models": [],
+    "providers": []
+  },
+  "migrationVersion": 1,
+  "property_types": [
+    {
+      "defaultValue": "{{title}}",
+      "name": "title",
+      "type": "text"
+    },
+    {
+      "defaultValue": "{{url}}",
+      "name": "source",
+      "type": "text"
+    },
+    {
+      "defaultValue": "{{author|split:\", \"|wikilink|join}}",
+      "name": "author",
+      "type": "multitext"
+    },
+    {
+      "defaultValue": "{{published}}",
+      "name": "published",
+      "type": "date"
+    },
+    {
+      "defaultValue": "{{date}}",
+      "name": "created",
+      "type": "date"
+    },
+    {
+      "defaultValue": "{{description}}",
+      "name": "description",
+      "type": "text"
+    },
+    {
+      "defaultValue": "clippings",
+      "name": "tags",
+      "type": "multitext"
+    },
+    {
+      "defaultValue": "{{url|split:\\\"/@\\\"|slice:1|split:\\\",\\\"|slice:0,2|join:\\\", \\\"}}",
+      "name": "location",
+      "type": "text"
+    },
+    {
+      "name": "rating",
+      "type": "number"
+    },
+    {
+      "defaultValue": "{{schema:@Book:image}}",
+      "name": "image",
+      "type": "text"
+    },
+    {
+      "defaultValue": "{{selector:.BookPageTitleSection__title h3}}",
+      "name": "series",
+      "type": "text"
+    },
+    {
+      "defaultValue": "{{selector:.release_date .date|split:\\\", \\\"|slice:1}}",
+      "name": "year",
+      "type": "number"
+    },
+    {
+      "name": "type",
+      "type": "multitext"
+    },
+    {
+      "defaultValue": "[[Places]]",
+      "name": "category",
+      "type": "multitext"
+    },
+    {
+      "name": "place",
+      "type": "multitext"
+    },
+    {
+      "name": "coords",
+      "type": "text"
+    },
+    {
+      "defaultValue": "{{selector:[data-item-id=address]?aria-label|split:\\\":\\\"|slice:1|trim}}",
+      "name": "address",
+      "type": "text"
+    },
+    {
+      "name": "url",
+      "type": "text"
+    },
+    {
+      "defaultValue": "{{selector:div[jsaction*=\\\"moreReviews\\\"] .fontDisplayLarge}}",
+      "name": "scoreGoogle",
+      "type": "number"
+    },
+    {
+      "name": "last",
+      "type": "date"
+    },
+    {
+      "name": "aliases",
+      "type": "aliases"
+    },
+    {
+      "name": "cssclasses",
+      "type": "multitext"
+    },
+    {
+      "name": "org",
+      "type": "multitext"
+    },
+    {
+      "name": "start",
+      "type": "date"
+    },
+    {
+      "name": "end",
+      "type": "date"
+    },
+    {
+      "name": "date",
+      "type": "date"
+    },
+    {
+      "name": "hidden",
+      "type": "checkbox"
+    },
+    {
+      "name": "interview",
+      "type": "text"
+    },
+    {
+      "name": "done",
+      "type": "checkbox"
+    },
+    {
+      "name": "marker",
+      "type": "text"
+    },
+    {
+      "name": "status",
+      "type": "text"
+    }
+  ],
+  "reader_settings": {
+    "fontSize": 1.5,
+    "lineHeight": 1.6,
+    "maxWidth": 38,
+    "theme": "default",
+    "themeMode": "auto"
+  },
+  "stats": {
+    "addToObsidian": 0,
+    "copyToClipboard": 0,
+    "saveFile": 0,
+    "share": 0
+  },
+  "template_1753911178551p0gh5ga": {
+    "schemaVersion": "0.1.0",
+    "name": "Steam",
+    "behavior": "create",
+    "noteContentFormat": "",
+    "properties": [
+      {
+        "name": "tags",
+        "value": "",
+        "type": "multitext",
+        "id": "1753911178551p0gh5ga_prop0"
+      },
+      {
+        "name": "year",
+        "value": "{{selector:.release_date .date|split:\\\", \\\"|slice:1}}",
+        "type": "number",
+        "id": "1753911178551p0gh5ga_prop1"
+      },
+      {
+        "name": "image",
+        "value": "{{image}}",
+        "type": "text",
+        "id": "1753911178551p0gh5ga_prop2"
+      },
+      {
+        "name": "rating",
+        "value": "",
+        "type": "number",
+        "id": "1753911178551p0gh5ga_prop3"
+      },
+      {
+        "name": "status",
+        "value": "todo",
+        "type": "text",
+        "id": "1753911178551p0gh5ga_prop4"
+      },
+      {
+        "name": "last",
+        "value": "",
+        "type": "date",
+        "id": "1753911178551p0gh5ga_prop5"
+      },
+      {
+        "name": "created",
+        "value": "{{date}}",
+        "type": "date",
+        "id": "1753911178551p0gh5ga_prop6"
+      }
+    ],
+    "triggers": [
+      "https://store.steampowered.com/app/"
+    ],
+    "noteNameFormat": "{{selector:#appHubAppName}}",
+    "path": "Resources/Games",
+    "id": "1753911178551p0gh5ga",
+    "context": ""
+  },
+  "template_1753911174534vygieb1": {
+    "schemaVersion": "0.1.0",
+    "name": "Kindle highlights",
+    "behavior": "append-specific",
+    "noteContentFormat": "{{selector:.kp-notebook-highlight|map:item => \"${item}\"|template:\"> ${str}\"}}",
+    "properties": [],
+    "triggers": [
+      "https://read.amazon.com/notebook"
+    ],
+    "noteNameFormat": "{{selector:h3}}",
+    "path": "Resources/Books",
+    "id": "1753911174534vygieb1",
+    "context": ""
+  },
+  "template_1753911170408gf7absl": {
+    "schemaVersion": "0.1.0",
+    "name": "Google Maps",
+    "behavior": "create",
+    "noteContentFormat": "",
+    "properties": [
+      {
+        "name": "category",
+        "value": "[[Places]]",
+        "type": "text",
+        "id": "1753911170408gf7absl_prop0"
+      },
+      {
+        "name": "type",
+        "value": "",
+        "type": "multitext",
+        "id": "1753911170408gf7absl_prop1"
+      },
+      {
+        "name": "place",
+        "value": "",
+        "type": "multitext",
+        "id": "1753911170408gf7absl_prop2"
+      },
+      {
+        "name": "coords",
+        "value": "{{url|split:\\\"/@\\\"|slice:1|split:\\\",\\\"|slice:0,2|join:\\\", \\\"}}",
+        "type": "text",
+        "id": "1753911170408gf7absl_prop3"
+      },
+      {
+        "name": "address",
+        "value": "{{selector:[data-item-id=address]?aria-label|split:\\\":\\\"|slice:1|trim}}",
+        "type": "text",
+        "id": "1753911170408gf7absl_prop4"
+      },
+      {
+        "name": "rating",
+        "value": "",
+        "type": "number",
+        "id": "1753911170408gf7absl_prop5"
+      },
+      {
+        "name": "created",
+        "value": "{{date}}",
+        "type": "date",
+        "id": "1753911170408gf7absl_prop6"
+      },
+      {
+        "name": "image",
+        "value": "{{selector:[jsaction$=heroHeaderImage] img?src}}",
+        "type": "text",
+        "id": "1753911170408gf7absl_prop7"
+      }
+    ],
+    "triggers": [
+      "https://www.google.com/maps/place/"
+    ],
+    "noteNameFormat": "{{selector:div[role=\"main\"]?aria-label}}",
+    "path": "Resources/Places",
+    "id": "1753911170408gf7absl",
+    "context": ""
+  },
+  "template_1753911157505vh423ac": {
+    "schemaVersion": "0.1.0",
+    "name": "Add book",
+    "behavior": "append-specific",
+    "noteContentFormat": "",
+    "properties": [
+      {
+        "name": "author",
+        "value": "{{schema:@Book:author[*].name}}",
+        "type": "multitext",
+        "id": "1753911157505vh423ac_prop0"
+      },
+      {
+        "name": "series",
+        "value": "{{selector:.BookPageTitleSection__title h3}}",
+        "type": "text",
+        "id": "1753911157505vh423ac_prop1"
+      },
+      {
+        "name": "year",
+        "value": "{{selector:p[data-testid='publicationInfo']|split:\\\"First published \\\"|slice:1|date:\\\"YYYY\\\"}}",
+        "type": "number",
+        "id": "1753911157505vh423ac_prop2"
+      },
+      {
+        "name": "image",
+        "value": "{{schema:@Book:image}}",
+        "type": "text",
+        "id": "1753911157505vh423ac_prop3"
+      }
+    ],
+    "triggers": [
+      "https://www.goodreads.com/book/show/"
+    ],
+    "noteNameFormat": "{{selector:h1}}",
+    "path": "Resources/Books",
+    "id": "1753911157505vh423ac",
+    "context": ""
+  },
+  "template_list": [
+    "1753911178551p0gh5ga",
+    "1753911174534vygieb1",
+    "1753911170408gf7absl",
+    "1753911157505vh423ac"
+  ],
+  "vaults": []
+}
